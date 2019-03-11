@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": ".venv/bin/python3.6",
+    "python.autoComplete.extraPaths": [
+        ".venv/lib/python3.6/site-packages",
+        "src"
+    ],
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${env:PYTHONPATH}:${workspaceRoot}/src"
+    },
+}
