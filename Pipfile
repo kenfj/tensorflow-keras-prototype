@@ -4,20 +4,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pylint = "*"
-black = "*"
-autopep8 = "*"
+pylint = "==2.3.1"
+autopep8 = "==1.4.3"
 
 [packages]
-tensorflow = "*"
-numpy = "*"
-pandas = "*"
-matplotlib = "*"
-jupyterlab = "*"
-Keras = "*"
-Pillow = "*"
-tornado = "<6"
-jupyterlab-server = ">0.2.0"
+numpy = "==1.16.2"
+pandas = "==0.24.2"
+matplotlib = "==3.0.3"
+tensorflow = "==1.13.1"
+jupyterlab = "==0.35.4"
+Pillow = "==5.4.1"
+Keras = "==2.2.4"
 
 [requires]
 python_version = "3.6"

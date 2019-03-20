@@ -51,6 +51,7 @@ code .
 or run jupyter lab server
 
 ```bash
+export PYTHONPATH=${PWD}/src
 pipenv run jupyter lab --ip=0.0.0.0 --no-browser
 open localhost:8888/lab
 ```
@@ -69,6 +70,7 @@ open http://localhost:6006/
 ```bash
 # install using requirements.txt
 pipenv install -r requirements.txt
+pipenv install -r requirements_dev.txt --dev
 # requirements.txt style output
 pipenv run pip freeze
 # update packages
@@ -82,6 +84,15 @@ pipenv --python 3.6
 pipenv --rm
 ```
 
+## Trouble shooting
+
+```bash
+# when you got pkg_resources.DistributionNotFound:
+# The 'pipenv==2018.11.26' distribution was not found
+# and is required by the application
+brew uninstall pipenv
+brew install pipenv
+```
 
 ## Reference
 
